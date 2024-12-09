@@ -356,7 +356,7 @@ with colu2:
          beta = arbol_beta(arbol_sub, K, r, T, N, u, d, tipo="call")
          st.write(alpha)
          st.write(beta)
-         st.write(combinar_alpha_beta(alpha, beta))
+         st.dataframe(combinar_alpha_beta(alpha, beta))
     elif opcion == "Put Europea":
         arbol_deriv = arbol_derivado(arbol_sub, K, r, T, N, u, d, tipo="put")
         grafica_deriv = grafica_derivado(arbol_deriv, N)
